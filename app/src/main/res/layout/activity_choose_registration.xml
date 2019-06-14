@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@raw/sample"
+    tools:context=".ChooseRegistration"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1"
+        >
+
+        <ImageButton
+            android:id="@+id/ib1"
+            android:layout_width="220sp"
+            android:layout_height="220sp"
+            android:scaleType="centerInside"
+            android:src="@raw/user" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register As Reporter "
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/ib1"
+            android:id="@+id/tv1"
+            android:background="@color/white_smoke"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/tv1"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:id="@+id/rl2"
+        >
+
+        <ImageButton
+            android:id="@+id/im2"
+            android:layout_width="220sp"
+            android:layout_height="220sp"
+            android:scaleType="centerInside"
+            android:src="@raw/administrative" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register As Administrator "
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/im2"
+            android:background="@color/white_smoke"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

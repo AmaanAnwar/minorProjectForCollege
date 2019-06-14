@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="55dp"
+        >
+        <ImageView
+            android:layout_width="220sp"
+            android:layout_height="220sp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/imagepreview"
+            android:id="@+id/Imv"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Imv"
+            >
+            <TableRow>
+
+                <TextView
+                    android:text=" Name    :   "
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:text="User Name"
+                    android:id="@+id/tv1"
+                    android:textSize="25sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:text="Email      :"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:text="User Email"
+                    android:id="@+id/tv2"
+                    android:textSize="25sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:text=" Phone   :   "
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:text="User Phone"
+                    android:id="@+id/tv3"
+                    android:textSize="25sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:text="Gender   :   "
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:text="User Gender"
+                    android:id="@+id/tv5"
+                    android:textSize="25sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:text="State      :   "
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:text="User State"
+                    android:id="@+id/tv6"
+                    android:textSize="25sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:text="City         :   "
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:text="User City"
+                    android:id="@+id/tv7"
+                    android:textSize="25sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </RelativeLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0sp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemTextColor="#ffffff"
+        app:itemIconTint="#ffffff"
+        app:menu="@menu/navigation"
+
+        />
+</android.support.constraint.ConstraintLayout>
